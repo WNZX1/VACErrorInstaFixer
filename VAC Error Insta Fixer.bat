@@ -13,17 +13,17 @@ taskkill /F /IM steamwebhelper.exe
 rem Deletes the Steam.dll, SteamUI.dll, and clientregistry.blob
 rem May give some error on deleting clientregistry.blob but it is fine
 echo Deletion Status -
-cd "C:\Program Files (x86)\Steam"
+cd "E:\Program Files (x86)\Steam"
 del Steam.dll
 del SteamUI.dll
 del clientregistry.blob
 
 rem Runs steamservice.exe
-cd "C:\Program Files (x86)\Steam\bin"
+cd "E:\Program Files (x86)\Steam\bin"
 start steamservice.exe
 
 rem Runs Steam.exe
-cd "C:\Program Files (x86)\Steam"
+cd "E:\Program Files (x86)\Steam"
 start Steam.exe
 pause
 cls
